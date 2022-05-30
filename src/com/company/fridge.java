@@ -19,6 +19,7 @@ public class fridge {
         beers.add(new Beers("Artezan","Friends Reminder #2","New England IPA",6,false));
         beers.add(new Beers("Fortuna","ArcyIPA","IPA",6,false));
     }
+    
 
     public void addBeer(){
         System.out.println("Podaj browar:");
@@ -98,6 +99,5 @@ public class fridge {
                 .filter(beers -> beers.getStyle().toLowerCase().contains(choice))
                 .forEach(Beers::displayBeerInformation);
     }
-
 
 }
